@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.462a9e6e.css",
-    "main.js": "/static/js/main.8f056203.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/slider1.jpg": "/static/media/slider1.f1240436adbd7aab66b8.jpg",
-    "static/media/slider3.jpg": "/static/media/slider3.9e618a89f13b21f8f06e.jpg",
-    "static/media/slider2.jpeg": "/static/media/slider2.ea249f07582a95615ffa.jpeg",
-    "index.html": "/index.html",
-    "main.462a9e6e.css.map": "/static/css/main.462a9e6e.css.map",
-    "main.8f056203.js.map": "/static/js/main.8f056203.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/MuhammedMohsn.github.io/E-Commerce/static/css/main.e255bba1.css",
+    "main.js": "/MuhammedMohsn.github.io/E-Commerce/static/js/main.b9eb3117.js",
+    "static/js/787.28cb0dcd.chunk.js": "/MuhammedMohsn.github.io/E-Commerce/static/js/787.28cb0dcd.chunk.js",
+    "static/media/slider1.jpg": "/MuhammedMohsn.github.io/E-Commerce/static/media/slider1.f1240436adbd7aab66b8.jpg",
+    "static/media/slider3.jpg": "/MuhammedMohsn.github.io/E-Commerce/static/media/slider3.9e618a89f13b21f8f06e.jpg",
+    "static/media/slider2.jpeg": "/MuhammedMohsn.github.io/E-Commerce/static/media/slider2.ea249f07582a95615ffa.jpeg",
+    "index.html": "/MuhammedMohsn.github.io/E-Commerce/index.html",
+    "main.e255bba1.css.map": "/MuhammedMohsn.github.io/E-Commerce/static/css/main.e255bba1.css.map",
+    "main.b9eb3117.js.map": "/MuhammedMohsn.github.io/E-Commerce/static/js/main.b9eb3117.js.map",
+    "787.28cb0dcd.chunk.js.map": "/MuhammedMohsn.github.io/E-Commerce/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.462a9e6e.css",
-    "static/js/main.8f056203.js"
+    "static/css/main.e255bba1.css",
+    "static/js/main.b9eb3117.js"
   ]
 }
