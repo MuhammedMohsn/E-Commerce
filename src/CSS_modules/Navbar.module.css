@@ -1,0 +1,57 @@
+.navLink, .nav-link {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+}
+.navLink:hover, .nav-link:hover {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.siteName {
+    font-family: 'Mochiy Pop One', sans-serif !important;
+    font-size: 25px;
+}
+.searchInput {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
+.searchInput:focus {
+    border: none !important;
+    background-color: #fff;
+    border-color:unset !important;
+}
+.searchBtn {
+    color: #fff;
+    background-color: #9c9c9c;
+    border: none;
+}
+.searchBtn:hover {
+    background-color: #9c9c9c;
+}
+.cartWrapper {
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 15px;
+    color: #6a6666;
+}
+.iconCount {
+   
+    background: #ff0000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: green;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  
+}
+.cartIcon {
+    font-size: 25px;
+    cursor: pointer;
+   
+}
