@@ -1,0 +1,17 @@
+.footer {
+    background-color: #161616;
+    color: #fff;
+    padding: 75px 0;
+}
+.footerTopWrapper, .footerBtmWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerTopWrapper {
+    margin-bottom: 100px;
+}
+.footerTitle {
+    font-family: 'Mochiy Pop One', sans-serif !important;
+    font-size: 25px;
+}

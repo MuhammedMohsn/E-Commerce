@@ -6,7 +6,7 @@ import Loading from '../Components/Loading'
 import styles3 from '../CSS_modules/Product.module.css'
 import { useDispatch } from 'react-redux'
 import { addProduct } from '../Redux/CartReducer'
-function Product({ setProducts, products, loading, setLoading }) {
+function Product({ setProducts, products, loading, setLoading,inputSearch }) {
   let dispatch = useDispatch();
   useEffect(() => {
     getProducts().then((productsData) => {
@@ -52,7 +52,7 @@ function Product({ setProducts, products, loading, setLoading }) {
 
           <h1 className="w-100 m-auto mb-4">Similar Products</h1>
           <Row className="justify-content-between align-items-center d-flex">
-            {similarProducts.map((product) => {
+            {similarProducts.filter((product)=>{return product.title.includes(inputSearch)}).map((product) => {
               let { id, title, price, image } = product
               return (
                 <Col key={id} xs="4" style={{ cursor: "pointer", height: "500px" }} >

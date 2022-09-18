@@ -1,5 +1,5 @@
 import "./App.css";
-import { Fragment, useState ,useEffect} from "react";
+import { Fragment, useState, useEffect } from "react";
 import NavBar from "./Components/Navbar";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -8,7 +8,8 @@ import Category from "./Pages/Category";
 import Product from "./Pages/Product";
 import HotDeals from "./Components/HotDeals";
 import "bootstrap/dist/css/bootstrap.min.css";
-import {getCategories} from './api'
+import Footer from './Components/Footer'
+import { getCategories } from './api'
 function App() {
   let [categories, setCategories] = useState([]);
   let [loading, setLoading] = useState(true);
@@ -16,7 +17,7 @@ function App() {
   let [inputSearch, setInputSearch] = useState("");
   useEffect(() => {
     getCategories().then((categories) => setCategories(categories))
-  },[])
+  }, [])
   return (
     <Fragment>
       <div className="App">
@@ -49,13 +50,17 @@ function App() {
                 <HotDeals
                   products={products}
                   setProducts={setProducts}
+                  loading={loading}
                   setLoading={setLoading}
+                  inputSearch={inputSearch}
+
                 />
               }
             />
             <Route
               path="/categories/:category"
-              element={<Category products={products} />}
+              element={<Category products={products} setProducts={setProducts} inputSearch={inputSearch}
+              />}
             />
             <Route
               path="/products/:id"
@@ -65,11 +70,14 @@ function App() {
                   setLoading={setLoading}
                   products={products}
                   setProducts={setProducts}
+                  inputSearch={inputSearch}
+
                 />
               }
             />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </div>
     </Fragment>

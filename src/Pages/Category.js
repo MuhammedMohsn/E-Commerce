@@ -1,19 +1,21 @@
-import React, { Fragment } from 'react'
+import React, { Fragment,useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from "../CSS_modules/Category.module.css"
-function Category({ products }) {
+import {getProducts} from '../api'
+function Category({ products,setProducts,inputSearch }) {
   let { category } = useParams()
   let categoryProducts = products.filter(product => category === product.category)
+  // useEffect(() => {setProducts(products)},[products,setProducts]);
+  useEffect(() => {getProducts().then((productsData) => {setProducts(productsData.filter(product => category === product.category));});
+}, [category]);
   return (
-
     <Fragment>
-
-      <Container>
+    <Container>
         <h1 className="fw-bolder">{category}</h1>
         <h5 className="fw-bolder mb-5">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</h5>
         <Row>
-          {categoryProducts.map(product => {
+          {categoryProducts.filter((product)=>{return product.title.includes(inputSearch)}).map(product => {
             let { image, title, price } = product
             return (
               <Col key={product.id} xs="3" style={{ height: "400px" }} className="justify-content-center">
@@ -27,7 +29,6 @@ function Category({ products }) {
             )
           })}
         </Row>
-
       </Container>
     </Fragment>
   )
