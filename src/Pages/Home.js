@@ -17,7 +17,6 @@ function Home({ setProducts, products, inputSearch,loading,setLoading }) {
       <CarouselComponent />
       <br />
       <br />
-
       <Who />
       <br />
       <br />

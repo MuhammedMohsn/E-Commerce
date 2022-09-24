@@ -18,8 +18,6 @@ const cartSlice = createSlice({
             state.quantity -= 1;
             state.total -= state.products[index].price;
             state.products.splice(index, 1);
-            // state.products.slice(0,index).concat(state.products.slice(index+1));
-            // state.products.filter((_,id)=>{return id!==index})
     },
 }})
 

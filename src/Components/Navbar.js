@@ -43,9 +43,7 @@ const NavBar = ({ categories, inputSearch, setInputSearch, products, setProducts
                                 className={`me-2 ${styles.searchInput}`}
                                 aria-label="Search"
                                 onChange={(event) => {
-                                    setInputSearch(event.target.value)
-                                  
-                                }}
+                                    setInputSearch(event.target.value) }}
                             />
                             <Button className={styles.searchBtn} variant="outline-success"
                             >Search</Button>
