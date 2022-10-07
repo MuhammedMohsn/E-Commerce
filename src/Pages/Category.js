@@ -6,7 +6,6 @@ import {getProducts} from '../api'
 function Category({ products,setProducts,inputSearch }) {
   let { category } = useParams()
   let categoryProducts = products.filter(product => category === product.category)
-  // useEffect(() => {setProducts(products)},[products,setProducts]);
   useEffect(() => {getProducts().then((productsData) => {setProducts(productsData.filter(product => category === product.category));});
 }, [category]);
   return (
@@ -21,7 +20,7 @@ function Category({ products,setProducts,inputSearch }) {
               <Col key={product.id} xs="3" style={{ height: "400px" }} className="justify-content-center">
                 <Link to={`/products/${product.id}`} style={{ textDecoration: "none", height: "100%", color: "white" }}>
                   <img src={image} alt={title} className={`w-100 h-75 m-auto rounded ${styles.product_img}`} />
-                  <div className="w-100 justify-content-between align-items-center d-flex">
+                  <div className="w-100 justify-content-between text-black fw-bolder align-items-center d-flex">
                     <div>{title.slice(0, 10)}</div>
                     <div>$ {price}</div>
                   </div></Link>

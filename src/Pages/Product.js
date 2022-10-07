@@ -58,7 +58,7 @@ function Product({ setProducts, products, loading, setLoading,inputSearch }) {
                 <Col key={id} xs="4" style={{ cursor: "pointer", height: "500px" }} >
                   <Link to={`/products/${product.id}`} className="text-white" style={{ textDecoration: "none" }}>
                     <img src={image} alt={title} className={`w-75 h-50 ${styles3.product_img}`} />
-                    <div className="justify-content-around align-items-center d-flex w-100">
+                    <div className="justify-content-around text-black fw-bolder align-items-center d-flex w-100">
                       <p>{title.slice(0, 10)}</p>
                       <p>$ {price}</p>
                     </div>
