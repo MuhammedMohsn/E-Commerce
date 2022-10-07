@@ -20,7 +20,7 @@ function Category({ products,setProducts,inputSearch }) {
               <Col key={product.id} xs="3" style={{ height: "400px" }} className="justify-content-center">
                 <Link to={`/products/${product.id}`} style={{ textDecoration: "none", height: "100%", color: "white" }}>
                   <img src={image} alt={title} className={`w-100 h-75 m-auto rounded ${styles.product_img}`} />
-                  <div className="w-100 justify-content-between text-black fw-bolder align-items-center d-flex">
+                  <div className="w-100 justify-content-between text-dark fw-bolder align-items-center d-flex">
                     <div>{title.slice(0, 10)}</div>
                     <div>$ {price}</div>
                   </div></Link>
