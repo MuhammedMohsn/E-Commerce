@@ -1,26 +1,3 @@
-.img1 {
-    background-image: url("../assets/slider1.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-
-}
-
-.img2 {
-    background-image: url("../assets/slider2.jpeg");
-    height: 100%;
-    width: 100%;
-    background-size:cover
-}
-
-.img3 {
-    background-image: url("../assets/slider3.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-   
-}
-
 .whoTitle {
     font-family: 'Edu VIC WA NT Beginner', cursive !important;
     font-weight: 600;

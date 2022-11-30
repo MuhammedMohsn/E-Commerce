@@ -9,7 +9,7 @@ export let getProducts = async () => {
     }
     catch (err) { console.log(err) }
 }
-
+// Get Categories
 export let getCategories= async () => {
     try {
         let response = await axios.get(`${URL}/products/categories`);

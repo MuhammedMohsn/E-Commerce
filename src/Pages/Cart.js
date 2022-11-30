@@ -20,7 +20,7 @@ function Cart() {
           {quantity > 0 ?
             cartProducts.map((product) => {
               let { id, title, image } = product
-              return (<Row key={id}>
+              return (<Row key={Math.random()}>
                 <Col xs="3"><img src={image} style={{ width: "80%", height: "100%" }} alt={title} /></Col>
                 <Col xs="7"><p>{title}</p></Col>
                 <Col xs="2"><CloseButton className="bg-danger" onClick={() => { deletehandler(id) }} /></Col>
@@ -40,8 +40,7 @@ function Cart() {
           <Button variant="primary" className="w-100 text-center rounded">Check Out</Button>
         </Col>
       </Row>
-
-    </Fragment>
+      </Fragment>
   )
 }
 
