@@ -76,7 +76,7 @@ const NavBar = () => {
                       <NavDropdown.Item key={i}>
                         <Link
                           className={`${styles.navLink} me-3`}
-                          to={`categories/${category}`}
+                          to={`categories/${encodeURIComponent(category)}`}
                         >
                           {category}
                         </Link>
