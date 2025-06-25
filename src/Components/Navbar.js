@@ -115,7 +115,7 @@ const NavBar = () => {
                 Search
               </Button>
             </Form>
-            <Link to="/cart" className={styles.navLink}>
+            <Link to="cart" className={styles.navLink}>
               <div className=" d-flex align-items-center position-relative">
                 <span className={styles.cartIcon}>&#x1F6D2;</span>
                 <span className={styles.iconCount}>{quantity}</span>
