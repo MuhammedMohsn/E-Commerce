@@ -36,10 +36,10 @@ const NavBar = () => {
   useEffect(() => {
     if (inputSearch) {
       setProducts(
-        products.filter((product) => {
-          return product.title
-            .toLowerCase()
-            .includes(inputSearch.toLowerCase());
+        products?.filter((product) => {
+          return product?.title
+            ?.toLowerCase()
+            ?.includes(inputSearch?.toLowerCase());
         })
       );
     } else {
@@ -71,7 +71,7 @@ const NavBar = () => {
                 {loading ? (
                   <div>loading....</div>
                 ) : (
-                  categories.map((category, i) => {
+                  categories?.map((category, i) => {
                     return (
                       <NavDropdown.Item key={i}>
                         <Link
@@ -90,7 +90,7 @@ const NavBar = () => {
               className="d-flex"
               onSubmit={(event) => {
                 event.preventDefault();
-                let searchedProducts = products.filter((product) => {
+                let searchedProducts = products?.filter((product) => {
                   return product.title
                     .toLowerCase()
                     .includes(inputSearch.toLowerCase());

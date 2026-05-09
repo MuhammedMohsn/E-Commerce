@@ -34,8 +34,8 @@ function Home() {
         {loading ? (
           <Loading />
         ) : (
-          products.map((product) => {
-            let { title, price, image } = product;
+          products?.map((product) => {
+            let { title, price, image } = product || {};
             return (
               <Col
                 xs={4}

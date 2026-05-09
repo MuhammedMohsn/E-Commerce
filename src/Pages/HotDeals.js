@@ -30,8 +30,8 @@ function HotDeals() {
       <Container className="mt-4">
         <h2 className={styles.header}>Hot Deals</h2>
         <Row>
-          {products.map((product) => {
-            let { title, price, image } = product;
+          {products?.map((product) => {
+            let { title, price, image } = product || {};
             return (
               <Col
                 xs={4}

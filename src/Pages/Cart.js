@@ -26,8 +26,8 @@ function Cart() {
       <Row className="justify-content-between mb-5">
         <Col xs="12" md="7">
           {quantity > 0 ? (
-            cartProducts.map((product) => {
-              let { id, title, image } = product;
+            cartProducts?.map((product) => {
+              let { id, title, image } = product || {};
               return (
                 <Row key={Math.random()}>
                   <Col xs="3">

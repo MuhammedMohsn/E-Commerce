@@ -72,8 +72,8 @@ function Product() {
         <hr />
         <h1 className="w-100 m-auto mb-4">Similar Products</h1>
         <Row className="justify-content-between align-items-center d-flex">
-          {similarProducts.map((product) => {
-            let { id, title, price, image } = product;
+          {similarProducts?.map((product) => {
+            let { id, title, price, image } = product || {};
             return (
               <Col
                 key={id}

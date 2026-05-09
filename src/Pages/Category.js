@@ -6,7 +6,7 @@ import Context from "../Context";
 function Category() {
   let { products, setProducts } = useContext(Context);
   let { category } = useParams();
-  let categoryProducts = products.filter(
+  let categoryProducts = products?.filter(
     (product) => category === product.category
   );
   useEffect(() => {
@@ -23,8 +23,8 @@ function Category() {
           Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
         </h5>
         <Row>
-          {categoryProducts.map((product) => {
-            let { image, title, price } = product;
+          {categoryProducts?.map((product) => {
+            let { image, title, price } = product || {};
             return (
               <Col
                 key={product.id}
